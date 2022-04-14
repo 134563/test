@@ -2,7 +2,7 @@
 
 local library = {}
 
-function local:CreateWindow(title)
+function local:CreateWindow("title")
     local UI = Instance.new("ScreenGui")
     local MainFrame = Instance.new("Frame")
     local TabSection = Instance.new("Frame")
@@ -61,7 +61,7 @@ Title.BackgroundTransparency = 1.000
 Title.Position = UDim2.new(0.0193050187, 0, 0.0240700208, 0)
 Title.Size = UDim2.new(0, 714, 0, 29)
 Title.Font = Enum.Font.GothamSemibold
-Title.Text = text
+Title.Text = title
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextScaled = true
 Title.TextSize = 14.000
