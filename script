@@ -1,0 +1,69 @@
+-- UI_Library
+
+local library = {}
+
+function local:CreateWindow(title)
+    local UI = Instance.new("ScreenGui")
+    local MainFrame = Instance.new("Frame")
+    local TabSection = Instance.new("Frame")
+    local ShadowForGui = Instance.new("Frame")
+    local UiCornerForGui = Instance.new("UICorner")
+    local ShadowForTABS = Instance.new("Frame")
+    local UIcornerFortabs = Instance.new("UICorner")
+    local Title = Instance.new("TextLabel")
+    local UImENU = Instance.new("UICorner")
+    local UICorner = Instance.new("UICorner")
+UI.Name = "UI"
+UI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = UI
+MainFrame.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.0965732038, 0, 0.11336717, 0)
+MainFrame.Size = UDim2.new(0, 777, 0, 457)
+
+TabSection.Name = "TabSection"
+TabSection.Parent = MainFrame
+TabSection.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+TabSection.BorderSizePixel = 0
+TabSection.Size = UDim2.new(0, 163, 0, 457)
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = TabSection
+
+ShadowForGui.Name = "ShadowForGui"
+ShadowForGui.Parent = TabSection
+ShadowForGui.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ShadowForGui.BorderSizePixel = 0
+ShadowForGui.Position = UDim2.new(1, 0, 0.111597374, 0)
+ShadowForGui.Size = UDim2.new(0, 614, 0, 4)
+
+UiCornerForGui.CornerRadius = UDim.new(0, 4)
+UiCornerForGui.Name = "UiCornerForGui"
+UiCornerForGui.Parent = ShadowForGui
+
+ShadowForTABS.Name = "ShadowForTABS"
+ShadowForTABS.Parent = TabSection
+ShadowForTABS.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ShadowForTABS.BorderSizePixel = 0
+ShadowForTABS.Position = UDim2.new(1, 0, 0.120350108, 0)
+ShadowForTABS.Size = UDim2.new(0, 4, 0, 402)
+
+UIcornerFortabs.CornerRadius = UDim.new(0, 4)
+UIcornerFortabs.Name = "UIcornerFortabs"
+UIcornerFortabs.Parent = ShadowForTABS
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0.0193050187, 0, 0.0240700208, 0)
+Title.Size = UDim2.new(0, 714, 0, 29)
+Title.Font = Enum.Font.GothamSemibold
+Title.Text = text
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
