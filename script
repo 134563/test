@@ -2,7 +2,7 @@
 
 local library = {}
 
-function local:CreateWindow("title")
+function Library:CreateWindow("title")
     local UI = Instance.new("ScreenGui")
     local MainFrame = Instance.new("Frame")
     local TabSection = Instance.new("Frame")
